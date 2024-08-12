@@ -1,0 +1,78 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* -----Main Container-----*/
+.main-container{
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* -----Calculator Container-----*/
+.calculator-container{
+  height: 495px;
+  width: 350px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* -----Calculator Output-----*/
+.calculator-output{
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 75px;
+  width: 300px;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+}
+h1{
+  text-align:right;
+}
+/* -----Button Container-----*/
+.btn-container{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) auto;
+  gap: 3px;
+}
+.btn{
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  font-size: 30px;
+  color: white;
+  background-color: #333333;
+  border: none;
+}
+.btn:hover{
+  color: black;
+  border: 1px solid white;
+}
+.btn-long{
+  height: 70px;
+  width: 140px;
+  border-radius: 50px;
+  grid-column: span 2;
+  font-size: 30px;
+  color: white;
+  background-color: #333333;
+  border: none;
+}
+.btn-long:hover{
+  color: black;
+  border: 1px solid white;
+}
+.newcolor{
+  background-color: #a5a5a5;
+}
+.newcolor1{
+  background-color: #ff9f0a;
+}
